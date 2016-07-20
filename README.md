@@ -9,4 +9,3 @@ Users can search for names, and if the name matches the phoneBook, the names mat
 #### Technologies:s
 - [x] Javascript
 - [x] Node.js
--
