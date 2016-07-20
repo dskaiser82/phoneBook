@@ -4,44 +4,48 @@ var phoneBook = require('./model/map.js');
 
 var port = 3000;
 
-//Search String
-var searchTerm = "Bonb";
 
-// var results = [];
+var searchTerm = "Rex Chapman";
+var results = [];
 
-// function Yeah(){
-//
-//     for (var i = 0; i < 6; i++) {
-//     if(result2 == true){
-//       //filter to loop through
-//       var lookFor = /phoneBook[i].lastName/i;
-//       var result2 = lookFor.test(searchTerm);
-//       returnNames = phoneBook[i].lastName+", "+phoneBook[i].firstName+"."
-//        console.log(lookFor)
-//
-//     }
-//   }
-//
-//   // console.log(phoneBook[searchTerm].phone)
-// }
-//
-// Yeah()
+function Yeah(){
+    for (var i = 0; i < 6; i++) {
+    // console.log(i)
+    // console.log(phoneBook[i].firstName)
+    // console.log("starting next loop")
+    if(searchTerm == phoneBook[i].lastName || searchTerm.includes(phoneBook[i].lastName)){
+      results = phoneBook[i].lastName+", "+phoneBook[i].firstName+"."
+      console.log(results)
+
+    }
+  }
+}
+
+Yeah()
 
 //change data map to All jacobs, all Chans,
 
 
+var potato = "Ivar Chan".includes("Cha");
+console.log(potato)
+
 // The string:
-var str = "Ivar Chan is the best!";
-
-// Look for "Hello"
-var patt = /Ivar/i;
-var result = patt.test(str);
-
-// Look for "W3Schools"
-patt2 = /World/i;
-result2 = patt2.test(str);
-
-console.log(result)
+// var str = "Chan";
+//
+// // Look for "Hello"
+// var patt = phoneBook[1].lastName
+// var result = patt.test(str);
+//  console.log(patt)
+//
+// function Yolo(){
+// for (var i = 0; i < 6; i++) {
+//     if(result === true){
+//     returnNames = phoneBook[i].lastName+", "+phoneBook[i].firstName+"."
+//      console.log(returnNames)}
+//   }
+// }
+//
+// Yolo()
 
 
 
