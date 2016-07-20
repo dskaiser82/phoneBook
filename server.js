@@ -5,29 +5,32 @@ var phoneBook = require('./model/map.js');
 var port = 3000;
 
 
-var searchTerm = "Rex Chapman";
+var searchTerm = "Daniel Kaiser";
 var results = [];
 
-function Yeah(){
-    for (var i = 0; i < 6; i++) {
-    // console.log(i)
-    // console.log(phoneBook[i].firstName)
-    // console.log("starting next loop")
-    if(searchTerm == phoneBook[i].lastName || searchTerm.includes(phoneBook[i].lastName)){
-      results = phoneBook[i].lastName+", "+phoneBook[i].firstName+"."
-      console.log(results)
 
+
+  function Yeah(){
+      for (var i = 0; i < 6; i++) {
+      // console.log(i)
+      // console.log(phoneBook[i].firstName)
+      // console.log("starting next loop")
+      if(searchTerm == phoneBook[i].lastName || searchTerm.includes(phoneBook[i].lastName)){
+        results = "Name Found: "+phoneBook[i].lastName+", "+phoneBook[i].firstName+"."
+        console.log(results)
+
+      }
     }
   }
-}
 
-Yeah()
+  Yeah()
+
 
 //change data map to All jacobs, all Chans,
 
 
-var potato = "Ivar Chan".includes("Cha");
-console.log(potato)
+// var potato = "Ivar Chan".includes("Cha");
+// console.log(potato)
 
 // The string:
 // var str = "Chan";
