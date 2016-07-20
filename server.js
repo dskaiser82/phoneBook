@@ -5,7 +5,7 @@ var phoneBook = require('./model/map.js');
 var port = 3000;
 
 
-var searchTerm = "Daniel Kaiser";
+var searchTerm = "Summer";
 var results = [];
 
 
