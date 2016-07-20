@@ -4,8 +4,8 @@ var phoneBook = {
   //   phone:626+"-"+555+"-"+51234
   // },
   0:{
-    firstName:"Ivar",
-    lastName: "Chan",
+    firstName:"ivar",
+    lastName: "chan",
     phone:626+"-"+555+"-"+51234
   },
   1:{
